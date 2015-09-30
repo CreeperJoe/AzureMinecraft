@@ -387,6 +387,7 @@
                 "mcEnableCommandBlock": "[parameters('mcEnableCommandBlock')]",
                 "mcSpawnMonsters": "[parameters('mcSpawnMonsters')]",
                 "mcGenerateStructures": "[parameters('mcGenerateStructures')]",
+                "mcCore": "[parameters('mcCore')]",
                 "mcLevelSeed": "[parameters('mcLevelSeed')]"
               }
             },
