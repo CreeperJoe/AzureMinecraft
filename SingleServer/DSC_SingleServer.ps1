@@ -59,7 +59,12 @@ Configuration SingleServer {
 		[Parameter(Mandatory=$true)]  
 		[ValidateNotNullorEmpty()]  
 		[string]
-		$mcLevelSeed
+		$mcLevelSeed,
+		
+		[Parameter(Mandatory=$true)]  
+		[ValidateNotNullorEmpty()]  
+		[string]
+		$mcCore
 	)
 
 	# Import Custom Resources
