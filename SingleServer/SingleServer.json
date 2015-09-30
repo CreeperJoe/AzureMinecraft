@@ -131,6 +131,17 @@
         "description": "Add a seed for your world"
       }
     },
+      "mcCore": {
+      "type": "string",
+      "defaultValue": "Minecraft",
+      "allowedValues": [
+        "Minecraft",
+        "spigotMC"
+      ],
+      "metadata": {
+        "description": "Select Your Minecraft Server Version"
+      }
+    },
     "newStorageAccountName": {
       "type": "string",
       "metadata": {
