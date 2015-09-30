@@ -573,8 +573,8 @@ Configuration SingleServer {
 		# Install - Minecraft (via Chocolatey)
         Script MinecraftInstall {
             GetScript = "Get-Package"
-            TestScript = { (Get-Package | Where-Object {$_.Name -eq 'minecraft'}).Count -eq 1 }
-            SetScript = "Install-Package minecraft -Source CreeperHub -ProviderName chocolatey  -Force"
+            TestScript = { (Get-Package | Where-Object {$_.Name -eq '$using:mcCore'}).Count -eq 1 }
+            SetScript = "Install-Package $using:mcCore -Source CreeperHub -ProviderName chocolatey  -Force"
             DependsOn = "[WindowsFeature]NET35","[Script]fileJava","[Package]installJava","[File]MinecraftFolder","[Environment]MinecraftRoot","[Script]CreeperHubSource","[xFirewall]MinecraftFW"
         }
 
