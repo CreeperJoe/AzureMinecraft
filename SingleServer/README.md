@@ -16,6 +16,9 @@ This template deploys the following resources:
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcreeperjoe%2FAzureMinecraft%2Fmaster%2FSingleServer%2FtSingleServer.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
 Note that any value in <i>server.properties</i>, <i>eula.txt</i>, or <i>ops.json</i> configured by PowerShell DSC should be updated using PowerShell DSC.  In other words, if you 
 make the change directly in the respective file, since PowerShell DSC configured that setting, it will set it back to whatever DSC initially set it as.  This
 serves to not only configure the system as desired, but maintain that configuration from being changed or corrupted unexpectedly, which is the nature
